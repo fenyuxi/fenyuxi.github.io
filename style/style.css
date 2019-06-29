@@ -1,0 +1,204 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, em, font, img, ins, ol, ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;/*设置元素的垂直对齐方式*/
+	background: transparent;/*设置背景为透明*/
+}
+body {
+	line-height: 1;
+}/*设置行高为1*/
+ol, ul {
+	list-style: none;
+}/*清除列表的默认样式外观*/
+body {
+	background: #FFFFFF;
+	color: rgba(0, 0, 0, 0.82);/*设置字体颜色和透明度*/
+	font: normal 100% "微软雅黑";
+}
+a {
+	color: #890101;
+	text-decoration: none;
+	-moz-transition: 0.2s color linear;
+	-webkit-transition: 0.2s color linear;
+	transition: 0.2s color linear;
+}/*设置超链接颜色和过渡效果*/
+a:hover {
+	color: #DF3030;
+}
+
+#logo img{
+	width: 17%;
+}
+.banner {
+	margin: 0px auto;
+}
+
+.swiper-slide {
+	height: 100%;
+	width: 100%;
+	text-align: left; 
+	
+}
+.swiper-wrapper img{
+	width: 80%;
+	height: 50%;
+}
+
+
+.banner p {
+	color: #700000;
+	font-size: 50px;
+	text-align: center;
+}
+
+.navls {
+	width: 100%;
+	height: 40px;/*此高度根据设计效果图设定，并非随意设置*/
+	background: #620000;
+	margin: 0 auto;/*设置整个容器水平居中放置*/
+}
+.navls ul li {
+	width:80px;
+	height: 29px;
+	float: left;/*此处浮动效果作用在li元素上，从而实现横向排列效果*/
+	padding: 9px 10px 0 90px;/*使用内边距控制文字上下左右的距离，使其显示在居中的位置*/
+	background:  no-repeat 0 0;/*使用背景图像美化列表项与列表项之间的分割*/
+	text-align: center;
+}
+.navls ul li a {
+	font-size: 20px;
+	color: #FFFFFF;
+}
+.navls ul li a:hover {
+	color: #00FFFB;
+}
+.cen {
+	text-align: center;
+	font-size: 20px;
+	color: #D50000;
+	font:  normal "楷体"；
+}
+.section img {
+	width:  50%;
+}
+.intro h3 {
+	text-align: center;
+}
+.book {
+	width: 25%;
+	float: left;
+	line-height: 30px;
+	padding-top: 10px;
+	padding-bottom: 18px;
+	text-align: justify;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.book p {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.book p {
+	text-align: center;
+	color: #560A0A;
+}
+.ple h4 ,a {
+	text-align: center;
+	font-size: 25px;
+	color: #0E00C5;
+}
+.ple h4, a:hover {
+	color: #C7C7C7;
+}
+.footer{/*页脚*/
+	top: 100px;
+	font-size: 15px;
+	text-align: center;
+	padding: 40px 0 20px;
+	background-color: #620000;
+}
+.footer h3 {
+	font-size: 20px;
+	color: #FFFFFF;
+}
+@media screen and (min-width:1025px) {
+	.logo{/*导航logo*/
+		margin-left:150px;
+	}
+	.nav{/*导航菜单*/
+		margin-right: 10px;
+	}
+	.banner p {
+		font-size: 50px;
+		text-align: center;
+	}
+	.len {
+		margin-right: 2.5%;
+		width: 14%;
+	}
+}
+@media screen and (max-width:768px) {
+	.mast, .banner, .inner, .tool {
+		float: none;
+		width: auto;
+	}
+	.navls ul li {
+	height: 29px;
+	float: left;/*此处浮动效果作用在li元素上，从而实现横向排列效果*/
+	padding: 8px 5px 0 5px;/*使用内边距控制文字上下左右的距离，使其显示在居中的位置*/
+	background:  no-repeat 0 0;/*使用背景图像美化列表项与列表项之间的分割*/
+	text-align: center;
+}
+	.swiper-wrapper img{
+	width: 300px;
+	height: 50%;
+}
+	
+
+
+}
+@media screen and (max-width:414px) {
+	.mast, .banner, .inner, .book {
+		float: none;
+		width: auto;
+	}
+	.navls ul li {
+	height: 29px;
+	float: left;/*此处浮动效果作用在li元素上，从而实现横向排列效果*/
+	padding: 8px 5px 0 10px;/*使用内边距控制文字上下左右的距离，使其显示在居中的位置*/
+	background:  no-repeat 0 0;/*使用背景图像美化列表项与列表项之间的分割*/
+	text-align: center;
+}
+	.navls ul li a {
+	font-size: 20px;
+	color: #2F2F2F;
+}
+	.navls {
+	width: 100%;
+	height: 40px;/*此高度根据设计效果图设定，并非随意设置*/
+	background: #ECECEC;
+	margin: 0 auto;/*设置整个容器水平居中放置*/
+}
+	
+	.banner p {
+		font-size: 30px;
+		text-align: center;
+	}
+	.len {
+		width: 100%;
+	}
+	.photos img {
+			width: 100%;
+			height: auto;
+		}
+}

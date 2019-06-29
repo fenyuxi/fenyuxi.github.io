@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="style/style.css" rel="stylesheet" type="text/css"> 
+<link href="swiper-3.3.1.min.css" rel="stylesheet" type="text/css">
+<title>文化传播</title>
+	<style>
+	.swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+		.banner img {
+			width: 100%;
+		}
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+		.banner p, h1, h2, h3 {
+			text-align: center;
+			font-size: 18px;
+			color: #001ED0
+		}
+	</style>
+</head>
+
+<body>
+	<div class="banner">
+	<div class="swiper-container">
+  					<div class="swiper-wrapper">
+						<div class="swiper-slide myslide-1"><img src="images/tt-y.jpeg"></div>
+    					<div class="swiper-slide myslide-2"><img src="images/ty-t.jpeg"></div>
+						<div class="swiper-slide myslide-3"><img src="images/zz-t.jpeg"></div>
+						<div class="swiper-slide myslide-4"><img src="images/hh.jpeg"></div>
+	
+  					</div>
+  				<!-- 这里是分页器 -->
+ 				 <div class="swiper-pagination"></div>
+				</div>
+		<p>个人介绍:任沛霖</p>
+		<h1>个人邮箱:1418108332@qq.com</h1>
+		<h2>动漫游戏控</h2>
+		<h3>作为一只初入世界的小白,没有钱啊,当然要打游戏来吃饭</h3>
+		<h3>熬夜结束了</h3>
+		<h3>汉族.男</h3>
+		<h3>这次没接广告</h3>
+		<h3>就读于全省第三(农业)的高级学院,喜欢肯德基母亲节的视频</h3>
+	</div>
+	<script src="swiper-3.3.1.min.js"></script> 
+<script>
+    var swiper = new Swiper('.swiper-container',{
+  effect : 'coverflow',
+  slidesPerView: 3,
+  centeredSlides: true,
+  coverflowEffect: {
+    rotate: 30,
+    stretch: 10,
+    depth: 60,
+    modifier: 2,
+    slideShadows : true
+  },
+});
+    </script>
+</body>
+</html>
