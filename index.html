@@ -1,80 +1,71 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
-<link href="style/style.css" rel="stylesheet" type="text/css"> 
+<link href="style/style.css" rel="stylesheet" type="text/css">	
 <link href="swiper-3.3.1.min.css" rel="stylesheet" type="text/css">
-<title>fyx</title>
-	<style>
-	.swiper-container {
-            width: 100%;
-            height: 100%;
-        }
-		.banner img {
-			width: 100%;
-		}
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-        }
-		.banner p, h1, h2, h3 {
-			text-align: center;
-			font-size: 18px;
-			color: #001ED0
-		}
-	</style>
+<title>create</title>
 </head>
 
 <body>
-	<div class="banner">
-	<div class="swiper-container">
-  					<div class="swiper-wrapper">
-						<div class="swiper-slide myslide-1"><img src="images/tt-y.jpeg"></div>
-    					<div class="swiper-slide myslide-2"><img src="images/ty-t.jpeg"></div>
-						<div class="swiper-slide myslide-3"><img src="images/zz-t.jpeg"></div>
-						<div class="swiper-slide myslide-4"><img src="images/hh.jpeg"></div>
-	
-  					</div>
-  				<!-- 这里是分页器 -->
- 				 <div class="swiper-pagination"></div>
-				</div>
-		<p>个人介绍:任沛霖</p>
-		<h1>个人邮箱:1418108332@qq.com</h1>
-		<h2>动漫游戏控</h2>
-		<h3>作为一只初入世界的小白,没有钱啊,当然要打游戏来吃饭</h3>
-		<h3>熬夜结束了</h3>
-		<h3>汉族.男</h3>
-		<h3>这次没接广告</h3>
-		<h3>就读于全省第三(农业)的高级学院,喜欢肯德基母亲节的视频</h3>
+<div id="page">
+	<div class="mast"> 
+ 	 	<ul class="nav">
+			<li><a href="xk.html">星空遨游</a></li>
+			<li><a href="ly_bt.html">旅游推荐</a></li>
+   			<li><a href="ms.html">美食品尝</a></li>
+			<li><a href="dw.html">动物朋友</a></li>
+			<li><a href="yx.html">游戏回忆</a></li>
+	 	</ul>	
 	</div>
+	<div class="section intro">
+				
+		<div class="banner"><img alt="" src="images/xk/xk5.jpg"></div>
+			
+			<div class="swiper-container">
+ 	 			<div class="swiper-wrapper">
+     				<div class="swiper-slide myslide-1"><img src="images/xk/hx.jpg"></div>
+     				<div class="swiper-slide myslide-2"><img src="images/yx/赛博朋克 封面.jpg"></div>
+     				<div class="swiper-slide myslide-3"><img src="images/yx/8.jpg"></div>
+					<div class="swiper-slide myslide-3"><img src="images/dw/120.jpg"></div>
+					<div class="swiper-slide myslide-3"><img src="images/dw/150.jpg"></div>
+					<div class="swiper-slide myslide-3"><img src="images/dw/110.jpg"></div>
+  				</div>
+  				<!-- 这里是分页器 -->
+  				<div class="swiper-pagination"></div>
+			</div>
+		
+	</div>
+<div class="section main">
+	<div class="photos">
+	<h2>主要更新</h2>
+	  <h3>新增部分照片</h3>
+		<ol>
+			<li class="fig"> <a href="xk.html"><img src="images/xk/4.jpg" alt=""></a></li>
+			<li class="fig"> <a href="ly_bt.html"><img src="images/ly/大理城.JPEG" alt=""></a></li>
+			<li class="fig"> <a href="ms.html"><img src="images/ms/104.jpg" alt=""></a></li>
+			<li class="fig"> <a href="yx.html"><img src="images/yx/L.jpg" alt=""></a></li>
+			<li class="fig"> <a href="dw.html"><img src="images/dw/ck.jpg"></a></li>
+		</ol>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<p>小组不负责股份有限公司</p>	
+    </div>
+	</div>
+	
 	<script src="swiper-3.3.1.min.js"></script> 
-<script>
-    var swiper = new Swiper('.swiper-container',{
-  effect : 'coverflow',
-  slidesPerView: 3,
-  centeredSlides: true,
-  coverflowEffect: {
-    rotate: 30,
-    stretch: 10,
-    depth: 60,
-    modifier: 2,
-    slideShadows : true
-  },
-});
+	<script>
+    	var mySwiper = new Swiper('.swiper-container',{
+    	speed:2500,
+    	autoplay: {
+      	delay: 2000,
+      	disableOnInteraction: false,
+      	waitForTransition: false,
+				},
+    	});
     </script>
 </body>
 </html>
