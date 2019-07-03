@@ -68,7 +68,7 @@ p {
 	text-align: center;
 }
 .banner img {
-	max-width: 80%;
+	max-width: 60%;
 }
 /*设置图像元素最大宽度为原始尺寸的100%*/
 .mast {
@@ -76,7 +76,7 @@ p {
 	width: 100%;	
 } 
 .fig img {
-	width: 80%;
+	width: 60%;
 	height: 80%;
 	
 }
@@ -112,7 +112,7 @@ ul {
 }
 
 .section photos img {
-	width: 70%;
+	width: 60%;
 	text-align: center;
 }
 .swiper-container {
@@ -145,7 +145,7 @@ ul {
         
         .swiper-slide img {
             height: 100%;
-            width: 70%;
+            width: 60%;
         }
 
 
